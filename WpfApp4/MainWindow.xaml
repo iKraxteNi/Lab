@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgStudent" Margin="0,179,0,10" SelectionChanged="DataGrid_SelectionChanged_1">
+        </DataGrid>
+        <Button x:Name="ADD_Student" HorizontalAlignment="Left" Margin="22,113,0,0" VerticalAlignment="Top" Height="33" Width="104" Click="ADD_Student_Click">
+            <Button Content="ADD"/>
+        </Button>
+        <Button x:Name="R_Student" Content="Remove Student" HorizontalAlignment="Left" Margin="150,113,0,0" VerticalAlignment="Top" Height="33" Width="91" Click="R_Student_Click"/>
+        <Button x:Name="saveButton" Content="SaveToFile" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,0.653" Click="Button_Click" Height="33" Width="96"/>
+        <Button x:Name="xmlSave" Content="XLM Save" HorizontalAlignment="Left" Margin="472,113,0,0" VerticalAlignment="Top" Height="32" Width="91" Click="xmlSave_Click_1"/>
+        <Button x:Name="xmlLoad" Content="XLM Load" HorizontalAlignment="Left" Margin="578,113,0,0" VerticalAlignment="Top" Height="32" Width="89" Click="xmlLoad_Click_1"/>
+        <Button x:Name="loadButton" Content="LoqdfromFile" HorizontalAlignment="Left" Margin="686,113,0,0" VerticalAlignment="Top" Height="32" Width="88" Click="loadButton_Click_1"/>
+        <Button x:Name="saveLocationChangeButton" Content="Save Location Change" HorizontalAlignment="Left" Margin="246,114,0,0" VerticalAlignment="Top" Width="91" Height="32" Click="saveLocationChangeButton_Click_1"/>
+        <Label  x:Name="saveLocationLabel" Content="" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="232"/>
+
+    </Grid>
+</Window>
+    
